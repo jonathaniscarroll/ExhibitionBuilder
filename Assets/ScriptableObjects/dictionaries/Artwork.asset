@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be4effbcbb2e4035872913741bc71f8, type: 3}
+  m_Name: Artwork
+  m_EditorClassIdentifier: 
+  NamedStringReferences:
+  - Name: Name
+    StringReference:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: d3c49bc8ec8e24514bff9f544e5165cd, type: 2}
+  - Name: File
+    StringReference:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: 979811e3bcc654a0994d2336141d33d0, type: 2}
+  - Name: Description
+    StringReference:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: c336bcc3178e44222a34ef2955be99ef, type: 2}
+  DictionaryEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 35f6ee923c9e34afdbbe20db0480df78, type: 2}
+        m_TargetAssemblyTypeName: StringDictionaryGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
