@@ -32,10 +32,10 @@ namespace GILES
 		 */
 		public static bool SaveFile(string path, string contents)
 		{
-			#if UNITY_WEBGL
-			WebGLFileSaver.SaveFile(contents,path);
-			return true;
-			#endif
+			//#if UNITY_WEBGL
+			//WebGLFileSaver.SaveFile(contents,path);
+			//return true;
+			//#endif
 			try
 			{
 				File.WriteAllText(path, contents);

@@ -11,3 +11,5 @@ This github repository contains the complete Unity project, and can be used to a
 In the Unity project, artworks are contained within the folders Assets/Resources/Objects and Assets/Resources/Primitives - placing more objects into those folders allows the users to place them in the built version of the project. 
 You may have to select the item located at Assets/Resources/ResourceDB, and chose "Update."
 Then, Build the application by going to File>Build Settings, choose the appropriate platform, and then press build. 
+
+https://www.youtube.com/watch?v=uE_FP8I0yqE
