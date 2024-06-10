@@ -570,6 +570,12 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  - name: Image-URL
+    ext: prefab
+    path: Objects
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   - name: Man
     ext: prefab
     path: Objects
@@ -746,6 +752,36 @@ MonoBehaviour:
     type: 2
     objectTypeName: TMPro.TMP_Settings, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  m_FileCount: 103
+  - name: I420_one_buffer
+    ext: mat
+    path: 
+    type: 2
+    objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: I420_one_buffer
+    ext: shader
+    path: 
+    type: 2
+    objectTypeName: UnityEngine.Shader, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: awrtc.js
+    ext: txt
+    path: 
+    type: 2
+    objectTypeName: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: wrtcI420
+    ext: shader
+    path: 
+    type: 2
+    objectTypeName: UnityEngine.Shader, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: wrtcI420Mat
+    ext: mat
+    path: 
+    type: 2
+    objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_FileCount: 109
   m_FolderCount: 23
-  UpdateAutomatically: 1
+  UpdateAutomatically: 0

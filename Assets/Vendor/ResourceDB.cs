@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -135,8 +135,12 @@ public class ResourceItem
             parent = ResourceDB.Instance.root;
         else
             parent = ResourceDB.GetFolder(path);
-        if (parent != null)
-            parent.childs.Add(name, this);
+	    if (parent != null){
+	    	Debug.Log(name);
+	    	parent.childs.Add(name, this);
+	    }
+        
+            
         if (type == Type.Folder)
         {
             childs = new Dictionary<string, ResourceItem>();
