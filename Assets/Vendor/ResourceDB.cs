@@ -136,7 +136,7 @@ public class ResourceItem
         else
             parent = ResourceDB.GetFolder(path);
 	    if (parent != null){
-	    	Debug.Log(name);
+	    	//Debug.Log(name);
 	    	parent.childs.Add(name, this);
 	    }
         

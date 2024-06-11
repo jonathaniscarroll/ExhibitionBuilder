@@ -1,0 +1,124 @@
+{
+  "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+  "name": "Level Editor SceneGraph Root",
+  "transform": {
+    "$type": "GILES.pb_Transform, Assembly-CSharp",
+    "position": {
+      "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [
+    {
+      "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+      "name": "Image-URL(Clone)",
+      "transform": {
+        "$type": "GILES.pb_Transform, Assembly-CSharp",
+        "position": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 6.0
+        },
+        "rotation": {
+          "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 4.08133554,
+          "y": 3.5,
+          "z": 3.5
+        }
+      },
+      "children": [],
+      "metadata": {
+        "$type": "GILES.pb_MetaData, Assembly-CSharp",
+        "_fileId": "b5b9804fef8254320ad6a821349c0e67",
+        "_assetBundlePath": {
+          "$type": "GILES.pb_AssetBundlePath, Assembly-CSharp",
+          "assetBundleName": "",
+          "filePath": ""
+        },
+        "_assetType": 0,
+        "componentDiff": {
+          "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+          "components": [],
+          "values": []
+        }
+      }
+    },
+    {
+      "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+      "name": "Image-URL(Clone)(Clone)",
+      "transform": {
+        "$type": "GILES.pb_Transform, Assembly-CSharp",
+        "position": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": -4.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": -0.7071068,
+          "z": 0.0,
+          "w": 0.7071068
+        },
+        "scale": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 1.16609585,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "children": [],
+      "metadata": {
+        "$type": "GILES.pb_MetaData, Assembly-CSharp",
+        "_fileId": "b5b9804fef8254320ad6a821349c0e67",
+        "_assetBundlePath": {
+          "$type": "GILES.pb_AssetBundlePath, Assembly-CSharp",
+          "assetBundleName": "",
+          "filePath": ""
+        },
+        "_assetType": 0,
+        "componentDiff": {
+          "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+          "components": [],
+          "values": []
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "$type": "GILES.pb_MetaData, Assembly-CSharp",
+    "_fileId": "MetaData_NoGUIDPresent",
+    "_assetBundlePath": null,
+    "_assetType": 2,
+    "componentDiff": {
+      "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+      "components": [],
+      "values": []
+    }
+  },
+  "components": []
+}

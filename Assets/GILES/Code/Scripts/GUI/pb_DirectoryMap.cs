@@ -134,7 +134,7 @@ namespace GILES
 
                 foreach (ResourceItem childItem in childItems)
                 {
-                	Debug.Log(childItem.Name);
+                	//Debug.Log(childItem.Name);
 
                     if ( childItem.ResourcesType == ResourceItem.Type.Folder )
                     {
