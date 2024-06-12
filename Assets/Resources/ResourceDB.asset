@@ -519,6 +519,12 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  - name: Text
+    ext: prefab
+    path: Objects
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   - name: Video-360
     ext: prefab
     path: Objects
@@ -1039,6 +1045,6 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_FileCount: 151
+  m_FileCount: 152
   m_FolderCount: 24
   UpdateAutomatically: 0
