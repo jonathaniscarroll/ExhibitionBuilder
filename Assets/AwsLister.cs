@@ -19,10 +19,9 @@ public class AwsLister : MonoBehaviour
 
 	public GameObject buttonPrefab; // Prefab for the button
 	public Transform buttonContainer; // Container to hold the buttons
-	public UnityEvent onListed;
+	public UnityEvent OnListed;
 
 	private Dictionary<string, GameObject> existingButtons = new Dictionary<string, GameObject>();
-
 
 
 	public void ListFilesInS3()
@@ -71,10 +70,17 @@ public class AwsLister : MonoBehaviour
 
 					// Parse XML response to list keys and construct full URLs
 					XDocument xml = XDocument.Parse(responseBody);
-					foreach (XElement element in xml.Descendants("{http://s3.amazonaws.com/doc/2006-03-01/}Key"))
+					Debug.Log("Parsed XML Document: " + xml.ToString());
+
+					var keys = xml.Descendants("{http://s3.amazonaws.com/doc/2006-03-01/}Key");
+					//Debug.Log("Number of Keys Found: " + keys.Count());
+
+					foreach (XElement element in keys)
 					{
 						string fileKey = element.Value;
-						string fileUrl = $"https://{awsBucketName}.s3.{region}.amazonaws.com/{Uri.EscapeDataString(fileKey)}";
+						// Replace spaces with '+'
+						string formattedKey = fileKey.Replace(" ", "+");
+						string fileUrl = $"https://{awsBucketName}.s3.{region}.amazonaws.com/{formattedKey}";
 						Debug.Log("File URL: " + fileUrl);
 
 						// Check if the button already exists
@@ -84,7 +90,7 @@ public class AwsLister : MonoBehaviour
 							CreateButton(fileKey, fileUrl);
 						}
 					}
-					onListed.Invoke();
+					OnListed.Invoke();
 				}
 			}
 		}

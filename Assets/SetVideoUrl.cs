@@ -19,7 +19,9 @@ public class SetVideoUrl : MonoBehaviour
 	
 	void Start()
 	{
+		
 		videoPlayer.prepareCompleted += OnPrepareCompleted;
+		ChangeVideoUrl(videoUrl);
 	}
 
 	void OnPrepareCompleted(VideoPlayer vp)

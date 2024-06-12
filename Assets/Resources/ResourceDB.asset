@@ -928,12 +928,6 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: ResourceDB
-    ext: asset
-    path: 
-    type: 2
-    objectTypeName: ResourceDB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - name: Fonts & Materials
     ext: 
     path: 
@@ -1033,6 +1027,6 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_FileCount: 150
+  m_FileCount: 149
   m_FolderCount: 24
   UpdateAutomatically: 0

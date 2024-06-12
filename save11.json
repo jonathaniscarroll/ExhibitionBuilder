@@ -1,0 +1,138 @@
+{
+  "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+  "name": "Level Editor SceneGraph Root",
+  "transform": {
+    "$type": "GILES.pb_Transform, Assembly-CSharp",
+    "position": {
+      "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [
+    {
+      "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+      "name": "Video-Flat(Clone)",
+      "transform": {
+        "$type": "GILES.pb_Transform, Assembly-CSharp",
+        "position": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 3.0
+        },
+        "rotation": {
+          "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 1.33333337,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "children": [],
+      "metadata": {
+        "$type": "GILES.pb_MetaData, Assembly-CSharp",
+        "_fileId": "aa6b41a433b5849c5a92b39ddc37d0f0",
+        "_assetBundlePath": {
+          "$type": "GILES.pb_AssetBundlePath, Assembly-CSharp",
+          "assetBundleName": "",
+          "filePath": ""
+        },
+        "_assetType": 0,
+        "componentDiff": {
+          "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+          "components": [
+            "SetVideoUrl, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          ],
+          "values": [
+            {
+              "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+              "videoUrl": "https://detail-deb.s3.ca-central-1.amazonaws.com/Atlantic+Superstore+Commercial+1995.mp4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "$type": "GILES.Serialization.pb_SceneNode, Assembly-CSharp",
+      "name": "Video-360(Clone)",
+      "transform": {
+        "$type": "GILES.pb_Transform, Assembly-CSharp",
+        "position": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "$type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "$type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "x": 1.33333337,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "children": [],
+      "metadata": {
+        "$type": "GILES.pb_MetaData, Assembly-CSharp",
+        "_fileId": "13ea14f6be0724c5f9f917c746538b1f",
+        "_assetBundlePath": {
+          "$type": "GILES.pb_AssetBundlePath, Assembly-CSharp",
+          "assetBundleName": "",
+          "filePath": ""
+        },
+        "_assetType": 0,
+        "componentDiff": {
+          "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+          "components": [
+            "UnityEngine.Video.VideoPlayer, UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          ],
+          "values": [
+            {
+              "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+              "url": "https://detail-deb.s3.ca-central-1.amazonaws.com/Atlantic+Superstore+Commercial+1995.mp4"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "$type": "GILES.pb_MetaData, Assembly-CSharp",
+    "_fileId": "MetaData_NoGUIDPresent",
+    "_assetBundlePath": null,
+    "_assetType": 2,
+    "componentDiff": {
+      "$type": "GILES.Serialization.pb_ComponentDiff, Assembly-CSharp",
+      "components": [],
+      "values": []
+    }
+  },
+  "components": []
+}
