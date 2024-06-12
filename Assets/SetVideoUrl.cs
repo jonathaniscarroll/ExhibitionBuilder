@@ -11,9 +11,26 @@ public class SetVideoUrl : MonoBehaviour
 		get{return _videoUrl;}
 		set{
 			_videoUrl = value;
-			videoPlayer.url = _videoUrl;
+			ChangeVideoUrl(_videoUrl);
 		}
 	}
 	
 	public VideoPlayer videoPlayer;
+	
+	void Start()
+	{
+		videoPlayer.prepareCompleted += OnPrepareCompleted;
+	}
+
+	void OnPrepareCompleted(VideoPlayer vp)
+	{
+		videoPlayer.Play();
+	}
+
+	public void ChangeVideoUrl(string newUrl)
+	{
+		videoPlayer.Stop();
+		videoPlayer.url = newUrl;
+		videoPlayer.Prepare();
+	}
 }

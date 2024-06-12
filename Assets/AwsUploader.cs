@@ -84,6 +84,7 @@ public class AwsUploader : MonoBehaviour
 				stream.Write(fileContent, 0, fileContent.Length);
 			}
 
+
 			Debug.Log("Sent bytes: " + request.ContentLength + ", for file: " + fileName);
 
 			// Send the request and get the response
