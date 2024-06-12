@@ -490,17 +490,6 @@ MonoBehaviour:
     path: 
     type: 1
     objectTypeName: 
-  - name: objects
-    ext: 
-    path: Level Editor Prefabs
-    type: 1
-    objectTypeName: 
-  - name: Sphere
-    ext: prefab
-    path: Level Editor Prefabs/objects
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   - name: Camera
     ext: prefab
     path: Level Editor Prefabs
@@ -518,77 +507,19 @@ MonoBehaviour:
     path: 
     type: 1
     objectTypeName: 
-  - name: Images
-    ext: 
-    path: Objects
-    type: 1
-    objectTypeName: 
-  - name: Image1
-    ext: prefab
-    path: Objects/Images
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Image2
-    ext: prefab
-    path: Objects/Images
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Image3
-    ext: prefab
-    path: Objects/Images
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Image4
-    ext: prefab
-    path: Objects/Images
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Videos
-    ext: 
-    path: Objects
-    type: 1
-    objectTypeName: 
-  - name: Video1
-    ext: prefab
-    path: Objects/Videos
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Video2
-    ext: prefab
-    path: Objects/Videos
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Car
+  - name: Image
     ext: prefab
     path: Objects
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: Image-URL
+  - name: Video-360
     ext: prefab
     path: Objects
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: Man
-    ext: prefab
-    path: Objects
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Tree
-    ext: prefab
-    path: Objects
-    type: 2
-    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - name: Woman
+  - name: Video-Flat
     ext: prefab
     path: Objects
     type: 2
@@ -599,81 +530,401 @@ MonoBehaviour:
     path: 
     type: 1
     objectTypeName: 
-  - name: Capsule
-    ext: prefab
+  - name: Architecture
+    ext: 
     path: Primitives
+    type: 1
+    objectTypeName: 
+  - name: Buildings
+    ext: 
+    path: Primitives/Architecture
+    type: 1
+    objectTypeName: 
+  - name: B_House1
+    ext: prefab
+    path: Primitives/Architecture/Buildings
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: Column
+  - name: B_House2
     ext: prefab
-    path: Primitives
+    path: Primitives/Architecture/Buildings
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: Cone
+  - name: B_House3
     ext: prefab
-    path: Primitives
+    path: Primitives/Architecture/Buildings
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - name: Cube
+  - name: B_House4
     ext: prefab
-    path: Primitives
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: B_House5
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_1
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_2
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_3
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_4
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_5
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_6
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: House_7
+    ext: prefab
+    path: Primitives/Architecture/Buildings
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Components
+    ext: 
+    path: Primitives/Architecture
+    type: 1
+    objectTypeName: 
+  - name: Corner_1
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Corner_2
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Corner_3
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Corner_4
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Corner_5
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_006
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_007
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_008
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_009
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_010
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_023
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_026
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube_027
+    ext: prefab
+    path: Primitives/Architecture/Components
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Cylinder
     ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Gate_1
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Gate_2
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Gate_3
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp6
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp_1
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp_2
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp_3
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp_4
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ramp_5
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_1
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_2
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_3
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_4
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_5
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_6
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_7
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Stairs_8
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_1
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_2
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_3
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_4
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_5
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Wall_6
+    ext: prefab
+    path: Primitives/Architecture/Components
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Shapes
+    ext: 
     path: Primitives
+    type: 1
+    objectTypeName: 
+  - name: Capsule
+    ext: prefab
+    path: Primitives/Shapes
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Column
+    ext: prefab
+    path: Primitives/Shapes
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cone
+    ext: prefab
+    path: Primitives/Shapes
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cube
+    ext: prefab
+    path: Primitives/Shapes
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Cylinder
+    ext: prefab
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Flat
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Hemi Sphere
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Hole
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: L Shape
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Sphere
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Torus Fat
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Torus Medium
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - name: Torus Thin
     ext: prefab
-    path: Primitives
+    path: Primitives/Shapes
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -782,6 +1033,6 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_FileCount: 109
-  m_FolderCount: 23
+  m_FileCount: 150
+  m_FolderCount: 24
   UpdateAutomatically: 0

@@ -4,9 +4,10 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Xml.Linq;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class AwsLister : MonoBehaviour
 {
@@ -15,10 +16,14 @@ public class AwsLister : MonoBehaviour
 	private const string awsSecretKey = "r95MXUX5PE1J1R5pjR4V1auuEjrrHqm43dUF+F5R";
 	private const string region = "ca-central-1";
 	private const string serviceName = "s3";
-	
-	private List<string> ListedStrings;
-	public StringListEvent OutputStringList;
-	
+
+	public GameObject buttonPrefab; // Prefab for the button
+	public Transform buttonContainer; // Container to hold the buttons
+	public UnityEvent onListed;
+
+	private Dictionary<string, GameObject> existingButtons = new Dictionary<string, GameObject>();
+
+
 	public void ListFilesInS3()
 	{
 		try
@@ -58,22 +63,27 @@ public class AwsLister : MonoBehaviour
 			using (var response = (HttpWebResponse)request.GetResponse())
 			{
 				Debug.Log("List completed with status: " + response.StatusCode);
-				ListedStrings = new List<string>();
 				using (var reader = new StreamReader(response.GetResponseStream()))
 				{
 					var responseBody = reader.ReadToEnd();
 					Debug.Log("Response Body: " + responseBody);
-					
+
 					// Parse XML response to list keys and construct full URLs
 					XDocument xml = XDocument.Parse(responseBody);
 					foreach (XElement element in xml.Descendants("{http://s3.amazonaws.com/doc/2006-03-01/}Key"))
 					{
 						string fileKey = element.Value;
 						string fileUrl = $"https://{awsBucketName}.s3.{region}.amazonaws.com/{Uri.EscapeDataString(fileKey)}";
-						ListedStrings.Add(fileUrl);
 						Debug.Log("File URL: " + fileUrl);
+
+						// Check if the button already exists
+						if (!existingButtons.ContainsKey(fileKey))
+						{
+							// Create a button for each new file
+							CreateButton(fileKey, fileUrl);
+						}
 					}
-					OutputStringList.Invoke(ListedStrings);
+					onListed.Invoke();
 				}
 			}
 		}
@@ -94,6 +104,30 @@ public class AwsLister : MonoBehaviour
 			{
 				Debug.LogError("Exception occurred: " + ex.Message);
 			}
+	}
+
+	void CreateButton(string text, string url)
+	{
+		GameObject buttonObj = Instantiate(buttonPrefab, buttonContainer);
+		Button button = buttonObj.GetComponent<Button>();
+		TMPro.TMP_Text buttonText = buttonObj.GetComponentInChildren<TMPro.TMP_Text>();
+		buttonObj.SetActive(true);
+
+		if (buttonText != null)
+		{
+			buttonText.text = text;
+		}
+
+		button.onClick.AddListener(() => CopyToClipboard(url));
+
+		// Add the new button to the dictionary
+		existingButtons.Add(text, buttonObj);
+	}
+
+	void CopyToClipboard(string text)
+	{
+		GUIUtility.systemCopyBuffer = text;
+		Debug.Log("Copied to clipboard: " + text);
 	}
 
 	private static byte[] GetSignatureKey(string key, string dateStamp, string regionName, string serviceName)
