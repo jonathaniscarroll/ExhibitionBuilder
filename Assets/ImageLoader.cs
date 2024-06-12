@@ -6,12 +6,27 @@ public class ImageLoader : MonoBehaviour
 {
 	[SerializeField]
 	private string _imageUrl;
-	public string imageUrl {get{return _imageUrl;}set{_imageUrl = value;StartCoroutine(DownloadImage(_imageUrl));}}
+	public string imageUrl
+	{
+		get { return _imageUrl; }
+		set
+		{
+			_imageUrl = value;
+			StopAllCoroutines(); // Stop any ongoing coroutines to prevent conflicts
+			StartCoroutine(DelayedDownloadImage(_imageUrl));
+		}
+	}
 	public Texture2DEvent OutputTexture;
 
 	void Start()
 	{
 		StartCoroutine(DownloadImage(imageUrl));
+	}
+
+	IEnumerator DelayedDownloadImage(string url)
+	{
+		yield return new WaitForEndOfFrame(); // Wait for one frame to ensure the URL is fully set
+		StartCoroutine(DownloadImage(url));
 	}
 
 	IEnumerator DownloadImage(string url)

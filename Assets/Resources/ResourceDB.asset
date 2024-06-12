@@ -507,6 +507,12 @@ MonoBehaviour:
     path: 
     type: 1
     objectTypeName: 
+  - name: Audio
+    ext: prefab
+    path: Objects
+    type: 2
+    objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   - name: Image
     ext: prefab
     path: Objects
@@ -928,6 +934,12 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  - name: ResourceDB
+    ext: asset
+    path: 
+    type: 2
+    objectTypeName: ResourceDB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   - name: Fonts & Materials
     ext: 
     path: 
@@ -1027,6 +1039,6 @@ MonoBehaviour:
     type: 2
     objectTypeName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_FileCount: 149
+  m_FileCount: 151
   m_FolderCount: 24
   UpdateAutomatically: 0
